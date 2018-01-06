@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Kavae</title>
+    <link rel="stylesheet" href="../css/topnav.css">
+    <link rel="stylesheet" href="../css/videos-style.css">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+  </head>
+  <body>
+
+  <div id="logo"><a href="../../index.html"><img src="../images/logo.PNG" alt="Kavae logo"></a><p id="kavae">kavae</p><br><p id="slogan">Your personal streaming service</p><br>
+    <hr>
+  </div>
+
+  <div id="videos">
+
+</div>
+
+  <script type="text/javascript">
+
+  sourceone = "<div class='video-container' style='text-align:center;'>";
+  sourcetwo = "<video class='video'";
+  sourcethree = "poster='../images/thumbnail.PNG' controls crossorigin>";
+  sourcefour = "<source src='../../videos/car.mp4'";
+  sourcefive = "type='video/webm'></video>";
+  sourcesix = "<p class='video-title'>Car</p></div>";
+  completesource = sourceone+sourcetwo+sourcethree+sourcefour+sourcefive+sourcesix;
+
+  document.getElementById('videos').innerHTML = completesource;
+  var instances = plyr.setup({
+    debug: true
+  });
+  </script>
+  </body>
+</html>

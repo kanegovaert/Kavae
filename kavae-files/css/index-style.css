@@ -1,0 +1,56 @@
+html > body > div p {
+  margin-top: -1%;
+}
+html > body > div#logo p#kavae {
+  margin-top: -2%;
+  margin-bottom: -2%;
+}
+
+html > body > div#menu-badges{
+  text-align: center;
+  margin-top: -18%;
+}
+
+html > body > div#menu-badges img {
+  transition: all 500ms ease-in-out;
+}
+html > body > div#menu-badges img:hover{
+  transform: scale(1.1);
+}
+
+html > body > div#menu-badges a {
+  margin: 4%;
+}
+
+html > body > div#logo hr {
+  height: 30px;
+  border-style: solid;
+  border-color: #8c8b8b;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+  transform: scaleY(2);
+}
+html > body > div#logo hr:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #8c8b8b;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+
+html > body > div#menu-badges div.badge {
+  display: inline-block;
+}
+
+@media only screen and (max-width:736px) {
+  html > body > div#menu-badges div.badge {
+  display: block;
+}
+  html > body > div#menu-badges {
+    margin-top: -36%;
+  }
+}
